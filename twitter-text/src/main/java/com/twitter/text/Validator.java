@@ -11,27 +11,6 @@ public class Validator {
 
   private Extractor extractor = new Extractor();
 
-  /**
-   * Returns the weighted length of a given tweet text
-   *
-   * @param tweetText the source to mark as modified.
-   * @return length of a tweet
-   * @deprecated Use TwitterTextParser
-   */
-  @Deprecated
-  public int getTweetLength(String tweetText) {
-    return TwitterTextParser.parseTweet(tweetText).weightedLength;
-  }
-
-  /**
-   * Checks if a given tweet text is valid.
-   * @deprecated Use TwitterTextParser
-   */
-  @Deprecated
-  public boolean isValidTweet(String text) {
-    return TwitterTextParser.parseTweet(text).isValid;
-  }
-
   public static boolean hasInvalidCharacters(String text) {
     return Regex.INVALID_CHARACTERS_PATTERN.matcher(text).matches();
   }

@@ -1,1 +1,1 @@
-include ':app', ':text', ':twitter-text'
+include ':app', ':twitter-text'
