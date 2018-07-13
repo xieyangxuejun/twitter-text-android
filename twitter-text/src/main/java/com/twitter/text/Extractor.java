@@ -39,6 +39,7 @@ public class Extractor {
       URL, HASHTAG, MENTION, CASHTAG
     }
 
+    protected String id;
     protected int start;
     protected int end;
     protected final String value;
@@ -133,6 +134,14 @@ public class Extractor {
 
     public void setExpandedURL(String expandedURL) {
       this.expandedURL = expandedURL;
+    }
+
+    public String getId() {
+      return id;
+    }
+
+    public void setId(String id) {
+      this.id = id;
     }
   }
 
