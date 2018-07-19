@@ -36,7 +36,7 @@ public class Extractor {
 
   public static class Entity {
     public enum Type {
-      URL, HASHTAG, MENTION, CASHTAG
+      URL, HASHTAG, MENTION, CASHTAG, NONE
     }
 
     protected String id;
